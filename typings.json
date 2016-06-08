@@ -1,4 +1,6 @@
 {
   "name": "tree-kill",
-  "main": "index.d.ts"
+  "main": "index.d.ts",
+  "homepage": "https://github.com/oherman1/typed-node-tree-kill",
+  "version": "1.0.0"
 }

@@ -1,11 +1,10 @@
 /**
  * Kill all processes in the process tree, including the root process.
  */
-declare module "tree-kill" {
+ interface IKill {
+   (processId: number, signal?: string, callback?: (err: any) => any): void;
+ }
 
-    function kill (processId: number, signal?: string, callback?: (err: any) => any): void;
-    namespace kill {
+declare const kill: IKill;
 
-    }
-    export = kill;
-}
+ export = kill;
