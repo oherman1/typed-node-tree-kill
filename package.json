@@ -1,0 +1,22 @@
+{
+  "name": "typed-node-tree-kill",
+  "version": "1.1.0",
+  "description": "typings for tree-kill",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "tree-kill": "^1.1.0",
+    "tslint": "^3.11.0",
+    "tslint-config-typings": "^0.2.3",
+    "typings": "^1.0.4"
+  },
+  "scripts": {
+    "build": "echo building... && typings bundle -o out/index.d.ts",
+    "lint": "echo linting... && tslint \"**/*.ts\" -e \"source/**\" -e \"source-test/**\" -e \"out/**\" -e \"node_modules/**\" -e \"typings/**\"",
+    "test": "echo running server tests...  && tsc -p test && jasmine out/test/test.js",
+    "postinstall": "typings install"
+  },
+  "author": "",
+  "license": "MIT"
+}

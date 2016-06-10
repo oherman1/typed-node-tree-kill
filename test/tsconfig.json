@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "../out/test"
+  },
+  "files": [
+    "test.ts",
+    "../typings/index.d.ts",
+    "../out/index.d.ts"
+  ]
+}
